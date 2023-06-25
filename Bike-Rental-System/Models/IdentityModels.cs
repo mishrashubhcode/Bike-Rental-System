@@ -3,6 +3,8 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using Bike_Rental_System.Models; // Add this using statement for model classes
+
 
 namespace Bike_Rental_System.Models
 {
@@ -25,6 +27,11 @@ namespace Bike_Rental_System.Models
         {
         }
 
+        // Add DbSet properties for your models
+        public DbSet<Customers> Customers { get; set; }
+        public DbSet<Bikes> Bikes { get; set; }
+        public DbSet<Rentals> Rentals { get; set; }
+        
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
