@@ -17,4 +17,14 @@ namespace Bike_Rental_System.Models
 
         public virtual ICollection<Rentals> Rentals { get; set; }
     }
+
+    public class BikeDto
+    {
+        public int BikeID { get; set; }
+        public string Brand { get; set; }
+        public string Model { get; set; }
+        public string Type { get; set; }
+        public bool Available { get; set; }
+
+    }
 }

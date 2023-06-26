@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Bike_Rental_System.Models.BikeDto>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List of Bikes</h2>
+
+@foreach (var bike in Model)
+{
+    <h2><a href="/Bike/Details/@bike.BikeID"></a>Brand: @bike.Brand</h2>
+    <div>Model: @bike.Model</div>
+    <div>Type: @bike.Type</div>
+}
+
