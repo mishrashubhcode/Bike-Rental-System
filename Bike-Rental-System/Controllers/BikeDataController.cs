@@ -19,6 +19,7 @@ namespace Bike_Rental_System.Controllers
 
         // GET: api/BikeData/ListBikes
         [HttpGet]
+        [Route("api/BikeData/LisTBikes")]
         public IEnumerable<BikeDto> ListBikes()
         {
             List<Bikes> Bikes = db.Bikes.ToList();
@@ -33,6 +34,15 @@ namespace Bike_Rental_System.Controllers
                 Available = a.Available
             }));
             return BikeDtos;
+        }
+
+        //testing the api
+        [HttpGet]
+        [Route("api/BikeData/Test")]
+        public string Test()
+       
+        {
+            return "Hello";
         }
 
         // GET: api/BikeData/FindBike/5
