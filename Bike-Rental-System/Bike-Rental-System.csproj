@@ -274,6 +274,7 @@
     <Content Include="Views\Bike\List.cshtml" />
     <Content Include="Views\Bike\Details.cshtml" />
     <Content Include="Views\Bike\New.cshtml" />
+    <Content Include="Views\Bike\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -25,7 +25,7 @@ namespace Bike_Rental_System.Controllers
             //curl https://localhost:44354/api/bikedata/listbikes
 
            
-            string url = "listbikes";
+                string url = "listbikes";
 
             HttpResponseMessage response = client.GetAsync(url).Result;
 
